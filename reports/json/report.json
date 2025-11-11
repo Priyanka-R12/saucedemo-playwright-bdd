@@ -1,0 +1,983 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cart-and-checkout-flow;sort-items-and-verify",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Sort items and verify",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 475802700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 664102800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as \"standard_user\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3537683699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I sort items by \"Name (Z to A)\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1124042599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the items list should be sorted by name descending",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254858299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I sort items by \"Price (low to high)\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1193107699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the items list should be sorted by price ascending",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28170799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I sort items by \"Price (high to low)\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1134141900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the items list should be sorted by price descending",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23844700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 253888600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12269000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-and-checkout-flow;add-5-items,-remove-last-2-and-6th-item",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Add 5 items, remove last 2 and 6th item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 594673299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 633445700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am logged in as \"standard_user\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1630361300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I sort items by \"Name (A to Z)\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1117849999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I select the first 5 items from the product list",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3757219100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I go to the cart",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179051500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I remove the last 2 items from the cart",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 343631300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I continue shopping",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171719000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I select 6th item from the product list",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261714099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I go to the cart",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149778299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the cart should contain the expected items",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:126"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33014500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152618900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 226933300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8307999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-and-checkout-flow;checkout-and-order-the-items",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Checkout and order the items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 637442800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 627054299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I am logged in as \"standard_user\"",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1562219499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I select the first 3 items from the product list",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2352855300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I go to the cart",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164799199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I have checkout information",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358370200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I enter first name \"West\", last name \"pac\", postal code \"40812\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 324319700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I continue checkout",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194274900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I complete checkout",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181823599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I return to products page",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186468899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I logout from the application",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 770402200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 251901899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8172899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-and-checkout-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart and Checkout Flow",
+    "tags": [],
+    "uri": "features\\cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-with-valid/invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Login with valid/invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 620235600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 671322099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 990265299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 634555800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the login result should be \"success\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18882200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 169713799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8947299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-valid/invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Login with valid/invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 628086400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 693035799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1077827499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 536329899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the login result should be \"locked\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18411099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 273676800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8233799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-valid/invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Login with valid/invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 641492299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 691615999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1045087800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"problem_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395638499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the login result should be \"success\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7058600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174734199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4164199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-valid/invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Login with valid/invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 354518299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 432137900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 737017100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"error_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 461338800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the login result should be \"success\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12267400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 579084699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4163400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-valid/invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Login with valid/invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 384638399
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 364106700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 679584499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"visual_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 400234700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the login result should be \"success\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11556799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 183913000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5363199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-valid/invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Login with valid/invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 650411000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 441933599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 915888599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"wrong_user\" and password \"wrong_pass\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 526290800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the login result should be \"invalid\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7998800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 201670899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5421699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]

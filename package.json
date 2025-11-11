@@ -1,0 +1,23 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "Playwright BDD automation framework for saucedemo.com using Cucumber + TypeScript + Page Object Model.",
+  "main": "index.js",
+  "scripts": {
+  "test": "npx cucumber-js --format json:reports/json/report.json && node generateReport.js"
+},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
+    "cucumber-html-reporter": "^6.0.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "playwright": "^1.56.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

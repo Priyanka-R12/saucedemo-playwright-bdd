@@ -1,0 +1,6 @@
+node_modules/
+playwright-report/
+.env
+npm-debug.log
+dist/
+src/support/world.ts
